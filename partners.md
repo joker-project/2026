@@ -5,7 +5,7 @@
 
 {% include navbar.md %}
 
-## Chairs: 
+## Organizers: 
 * **[Liana Ermakova](https://www.univ-brest.fr/hcti/menu/Membres/Enseignants-chercheurs/Ermakova--Liana) (Université de Bretagne Occidentale, Brest, France)**
 <br>Associate professor in computer science
 <br>HCTI, Université de Bretagne Occidentale, Brest, France
@@ -20,9 +20,7 @@
 <br>Lab-STICC (CNRS UMR 6285), Leader of the COMMEDIA Team
 <br>*JOKER@CLEF chair*
 
-* **[Ricardo Campos](https://www.di.ubi.pt/~rcampos/) (University of Beira Interior, Covilhã, Portugal & INESC TEC, Porto, Portugal)**
-<br>Assistant Professor in Computer Science
-<br>*JOKER@CLEF chair*
+
 
 
 

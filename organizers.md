@@ -13,12 +13,12 @@
 
 * **[Tristan Miller](https://logological.org/) (University of Manitoba, Canada)**
 <br>Assistant Professor, Department of Computer Science
-<br>*JOKER@CLEF chair*
+<br>Organizer of Tasks 1 (EN)
 
 * **[Anne-Gwenn Bosser](https://labsticc.fr/en/directory/bosser-anne-gwenn) (ENIB, Brest, France)**
 <br>Associate Professor in Computational Sciences
 <br>Lab-STICC (CNRS UMR 6285), Leader of the COMMEDIA Team
-<br>*JOKER@CLEF chair*
+<br>Organizer of Tasks 1 (FR)
 
 
 

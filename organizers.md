@@ -20,6 +20,10 @@
 <br>Lab-STICC (CNRS UMR 6285), Leader of the COMMEDIA Team
 <br>Organizer of Tasks 1 (FR)
 
+* **[Poojan Vachharajani](https://www.linkedin.com/in/poojan-vachharajani) (Amazon, Hyderabad, India)**
+<br>Applied Scientist
+<br>Organizer of Tasks 1 (EN, Hinglish)
+
 
 
 

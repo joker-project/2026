@@ -30,5 +30,5 @@
 </div>
 <br />
 <div align="center">
-  <a href="https://clef2026.clef-initiative.eu"><img src="img/clef2025.png" height="90"></a> 
+  <a href="https://clef2026.clef-initiative.eu"><img src="img/clef26-logo-dark.svg" height="90"></a> 
 </div>

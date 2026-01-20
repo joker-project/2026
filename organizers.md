@@ -15,9 +15,9 @@
 <br>Assistant Professor, Department of Computer Science
 <br>Organizer of Tasks 1 (EN)
 
-* **[Anne-Gwenn Bosser](https://labsticc.fr/en/directory/bosser-anne-gwenn) (ENIB, Brest, France)**
-<br>Associate Professor in Computational Sciences
-<br>Lab-STICC (CNRS UMR 6285), Leader of the COMMEDIA Team
+* **[Anne-Gwenn Bosser](https://labsticc.fr/en/directory/bosser-anne-gwenn) (Bretagne INP - ENIB, Brest, France)**
+<br>Associate Professor in Computer Sciences
+<br>Lab-STICC (CNRS UMR 6285), Co-Leader of the COMMEDIA Team
 <br>Organizer of Tasks 1 (FR)
 
 * **[Poojan Vachharajani](https://www.linkedin.com/in/poojan-vachharajani) (Amazon, Hyderabad, India)**

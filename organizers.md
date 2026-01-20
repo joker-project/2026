@@ -28,6 +28,11 @@
 <br/>Associate Professor, Institute for Logic, Language, and Computation.
 <br/>Co-organizer of Tasks 1, 2, and 4.
 
+* **[Igor Kuzmin](https://www.linkedin.com/in/igor-kuzmin-tech/) (Universitat Pompeu Fabra, Barcelona, Spain)**
+<br>BSC Research Engineer, PhD Student at UPF
+<br>Organizer of Tasks 2 (ES) and 4
+
+
 
 
 

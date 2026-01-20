@@ -7,7 +7,7 @@
 {% include navbar.md %}
 
  <h1 align="center">CLEF 2026 JOKER Track:</h1>
-  <h2 align="center">Humour Detection, Search, and Translation</h2>> 
+  <h2 align="center">Humour Detection, Search, and Translation</h2>
 
 ## Abstract
   
@@ -55,7 +55,7 @@ To encourage research in humor-aware information retrieval, JOKER 2024 introduce
 
 ## How to participate
 
-In order to participate, you should sign up at the [CLEF](https://clef-labs-registration.dipintra.it/)) website. The registration closes on April 23, 2026.
+In order to participate, you should sign up at the [CLEF](https://clef-labs-registration.dipintra.it/) website. The registration closes on April 23, 2026.
 
 All team members should join the JOKER mailing list:
 [https://groups.google.com/u/4/g/joker-project](https://groups.google.com/u/4/g/joker-project). 
@@ -64,11 +64,11 @@ The data will be made available to all registered participants.
   
 <!--## References
   
-  1. Liana Ermakova, Anne-Gwenn Bosser, Adam Jatowt, and Tristan Miller. 2023a. The JOKER corpus: English-french parallel data for multilingual word- play recognition. In Proceedings of the 46th Inter- national ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2023, Taipei, Taiwan, July 23-27, 2023, pages 2796–2806.ACM.
+  1. Liana Ermakova, Anne-Gwenn Bosser, Adam Jatowt, and Tristan Miller. 2023a. The JOKER corpus: English-French parallel data for multilingual word- play recognition. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2023, Taipei, Taiwan, July 23-27, 2023, pages 2796–2806.ACM.
   
   2. Liana Ermakova, Tristan Miller, Anne-Gwenn Bosser, Victor Manuel Palma Preciado, Grigori Sidorov, and Adam Jatowt. 2023b. Overview of JOKER 2023 Automatic Wordplay Analysis Task 1 – pun detection. In Working Notes of CLEF 2023 – Conference and Labs of the Evaluation Forum, volume 3497 of CEUR Workshop Proceedings, pages 1785–1803.
   
-  3. Liana Ermakova, Tristan Miller, Anne-Gwenn Bosser, Victor Manuel Palma Preciado, Grigori Sidorov, and Adam Jatowt. 2023c. Overview of JOKER 2023 Au- tomatic Wordplay Analysis Task 2 – pun location and interpretation. In Working Notes of CLEF 2023 – Conference and Labs of the Evaluation Forum, vol- ume 3497 of CEUR Workshop Proceedings, pages 1804–1817.
+  3. Liana Ermakova, Tristan Miller, Anne-Gwenn Bosser, Victor Manuel Palma Preciado, Grigori Sidorov, and Adam Jatowt. 2023c. Overview of JOKER 2023 Automatic Wordplay Analysis Task 2 – pun location and interpretation. In Working Notes of CLEF 2023 – Conference and Labs of the Evaluation Forum, volume 3497 of CEUR Workshop Proceedings, pages 1804–1817.
   
   4. Liana Ermakova, Tristan Miller, Anne-Gwenn Bosser, Victor Manuel Palma Preciado, Grigori Sidorov, and Adam Jatowt. 2023d. Overview of JOKER 2023 Automatic Wordplay Analysis Task 3 – pun translation. In Working Notes of CLEF 2023 – Conference and Labs of the Evaluation Forum, volume 3497 of CEUR Workshop Proceedings, pages 1818–1827.
   
@@ -113,11 +113,9 @@ The data will be made available to all registered participants.
   <a href="https://www.mshb.fr"><img src="img/mshb.jpg" height="120"></a>
   <a href="https://sea-eu.org/?lang=fr"><img src="img/sea-eu.png" height="120"></a>
   <a href="https://www.gouvernement.fr/le-programme-d-investissements-d-avenir"><img src="img/Logotype France 2030.jpg" height="120"></a>
-  <a href="https://www.ubi.pt"><img src="img/ubi.png" height="120"></a>
-  <a href="https://www.inesctec.pt"><img src="img/inesctec.png" height="120">
   </a>
 </div>
 <br />
 <div align="center">
-  <a href="https://clef2025.clef-initiative.eu/index.php"><img src="img/clef2025.png" height="90"></a> 
+  <a href="https://clef2026.clef-initiative.eu/"><img src="img/clef26-logo-dark.svg" height="90"></a> 
 </div>

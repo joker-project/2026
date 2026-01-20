@@ -24,6 +24,9 @@
 <br>Applied Scientist
 <br>Organizer of Tasks 1 (EN, Hinglish)
 
+* **[Jaap Kamps](https://www.illc.uva.nl/People/Staff/person/1523/Dr-ir-Jaap-Kamps) (University of Amsterdam, Amsterdam, The Netherlands)**
+<br/>Associate Professor, Institute for Logic, Language, and Computation.
+<br/>Co-organizer of Tasks 1, 2, and 4.
 
 
 

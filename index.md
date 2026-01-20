@@ -6,9 +6,8 @@
 
 {% include navbar.md %}
 
-<br>
-  <h1 align="center">CLEF 2025 JOKER Track:</h1>
-  <h2 align="center">Automatic Humour Analysis</h2> 
+ <h1 align="center">CLEF 2026 JOKER Track:</h1>
+  <h2 align="center">Humour Detection, Search, and Translation</h2>> 
 
 ## Abstract
   
@@ -18,13 +17,14 @@
     
   Humour plays a vital role in social interaction. Understanding it, however, can be challenging for humans, often requiring a good grasp of cultural references and double meanings. State-of-the-art **artificial intelligence** (AI), **natural language processing** (NLP), and **information retrieval** (IR) models also remain largely impervious to humour or other non-literal meaning aspects of texts. This is especially true for tasks like wordplay detection or analysis, which rely on the surface structure (orthography or pronunciation) of a word; such surface-level features are not directly captured in the deep semantic embeddings of modern  AI models. They also cannot be captured by current pre-training models based on next-word prediction objectives, which tend to learn literal, statistically likely patterns in language rather than nuanced, non-literal meanings often associated with humour, wordplay, or sarcasm.
     
-  The JOKER Lab, now in its fourth year, aims to bring together social and computer scientists to create reusable test collections featuring wordplay and humour, and to foster work on automatic humour analysis. 
+  The JOKER Lab, now in its fifth year, aims to bring together social and computer scientists to create reusable test collections featuring wordplay and humour, and to foster work on automatic humour analysis. 
 
 ## [Tasks](./tasks)
-  - **Task 1** Humour-aware Information Retrieval
-  - **Task 2** Wordplay Translation
-  - **Task 3** Onomastic Wordplay Translation
-  - **Task 4** JOKER 2022-2024 revisited: Previous tasks by popular requests (pun detection EN/FR/ES, pun location EN/FR/ES)
+  - **Task 1** Humour-aware Information Retrieval: retrieve short humorous texts for a query in English, French, and Hinglish
+  - **Task 2** Pun Translation: translate puns from English to French and Spanish
+  - **Task 3** Onomastic Wordplay Translation: translate onomastic wordplay from English to French
+  - **Task 4** Humour Generation: guided creativity
+  - **Task 5** JOKER 2022-2024 revisited: Previous tasks by popular requests (pun detection EN/FR/ES, pun location EN/FR/ES)
 
 
 ## Use Case
@@ -44,19 +44,18 @@ To encourage research in humor-aware information retrieval, JOKER 2024 introduce
 
 ---
 
-* **18 November 2025**: Registration opens
-* **25 April 2025**: Registration closes
-* **2 June 2025** (can be extended on request): End of Evaluation Cycle [submission of runs]
-* **16 June 2025**: Submission of Participant Papers [CEUR-WS]
-* **16 June–27 June 2025**: Review process of participant papers
-* **27 June 2025:** Notification of Acceptance for Participant Papers [CEUR-WS]
-* **7 July 2025**: Camera Ready Copy of Participant Papers
-* **21-25 July 2025**: CEUR-WS Working Notes Preview for Checking by Authors and Lab Organizers
+* **17 November 2025**: Registration opens
+* **23 April 2026**: Registration closes
+* **7 May 2026**: End of Evaluation Cycle [submission of runs]
+* **28 May 2026**: Submission of Participant Papers [CEUR-WS]
+* **30 June 2026**: Notification of Acceptance for Participant Papers [CEUR-WS]
+* **6 July 2026**: Camera Ready Copy of Participant Papers
+* **21-24 September 2026**: CLEF conference at Jena, Germany
 
 
 ## How to participate
 
-In order to participate, you should sign up at the [CLEF](https://clef2025.clef-initiative.eu/index.php?page=Pages/registration.html) website. The registration closes on April 25, 2025.
+In order to participate, you should sign up at the [CLEF](https://clef-labs-registration.dipintra.it/)) website. The registration closes on April 23, 2026.
 
 All team members should join the JOKER mailing list:
 [https://groups.google.com/u/4/g/joker-project](https://groups.google.com/u/4/g/joker-project). 
@@ -99,13 +98,13 @@ The data will be made available to all registered participants.
 ## How to Cite
   If you extend or use this work, please cite the [paper](https://link.springer.com/chapter/10.1007/978-3-031-13643-6_27) where it was introduced:
   
-  > Ermakova, L., Bosser, AG., Miller, T., Campos, R. (2025). CLEF 2025 JOKER Lab: Humour in the Machine. In: Hauff, C., et al. Advances in Information Retrieval. ECIR 2025. Lecture Notes in Computer Science, vol 15576. Springer, Cham. [https://doi.org/10.1007/978-3-031-88720-8_59](https://doi.org/10.1007/978-3-031-88720-8_59).
+  > L.Ermakova, I.Kuzmin, P.Vachharajani, T.Miller, A.-G. Bosser, and J. Kamps (2026). CLEF 2026 JOKER Track: Humour Detection, Search, and Translation. In: Advances in Information Retrieval. ECIR 2026. Lecture Notes in Computer Science. Springer, Cham. 
 
 > Liana Ermakova, Anne-Gwenn Bosser, Adam Jatowt, and Tristan Miller. 2023. The JOKER Corpus: English-French Parallel Data for Multilingual Wordplay Recognition. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '23). Association for Computing Machinery, New York, NY, USA, 2796–2806. [https://doi.org/10.1145/3539618.3591885](https://doi.org/10.1145/3539618.3591885)
   
   
   <p>
-  <em>This project has received a government grant managed by the National Research Agency under the program "Investissements d'avenir" integrated into France 2030, with the Reference ANR-19-GURE-0001. It was also financed by National Funds through the FCT - Fundação para a Ciência e a Tecnologia, I.P. (Portuguese Foundation for Science and Technology) within the project StorySense, with reference 2022.09312.PTDC (DOI 10.54499/2022.09312.PTDC).</em>
+  <em>This project has received a government grant managed by the National Research Agency under the program "Investissements d'avenir" integrated into France 2030, with the Reference ANR-19-GURE-0001.</em>
   </p>
   <p>
   <em>JOKER is supported by The Human Science Institute in Brittany (MSHB)</em>

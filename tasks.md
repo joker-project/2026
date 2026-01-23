@@ -27,7 +27,7 @@ The data will be made available to all registered participants.
   * Hinglish
 * **Task 2: Wordplay Translation** Translating English punning jokes into French and Spanish. Translations should aim to preserve, to the extent possible, both the form and meaning of the original wordplay.
 * **Task 3: Onomastic Wordplay Translation** The objective of the task is to translate onomastic wordplay from English to French. Such wordplay is widely used as a rhetorical device in novels, poetry, and plays
-* **Task 4** Humour Generation: guided creativity
+* **Task 4: Humour Generation** guided creativity
 * **JOKER 2022-2024 revisited** Previous tasks by popular requests (pun detection EN/FR/ES, pun location EN/FR/ES
 <!--* **Task 4: Controlled Creativity** Identifying and avoiding hallucination. This is a possible new task coordinated between a number of tracks dealing with text generation tasks. The translation of humorous texts can require considerable creative effort, as a literal translation does not preserve the wordplay.-->
  

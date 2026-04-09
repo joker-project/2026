@@ -32,8 +32,22 @@
 <br>BSC Research Engineer, PhD Student at UPF
 <br>Organizer of Tasks 2 (ES) and 4
 
+* **[Sukomal Pal](https://www.linkedin.com/in/sukomal-pal-107088237/) (Indian Institute of Technology (BHU) Varanasi, India)**
+<br>Associate Professor, Department of Computer Science and Engineering.
+<br>Indian Institute of Technology (BHU) Varanasi, India 
+<br>Co-organizer of Tasks 1 (EN, Hinglish)
 
+* **[Arjun Mukherjee](https://www.linkedin.com/in/arjun-mukherjee-04702755/) (Indian Institute of Technology (BHU) Varanasi, India)**
+<br>Research Scholar, PhD Student at IIT (BHU) Varanasi
+<br>Co-organizer of Tasks 1 (EN, Hinglish)
 
+* **[Jasvindar Singh](https://www.linkedin.com/in/jasvindar-singh-b877b546/) (Indian Institute of Technology (BHU) Varanasi, India)**
+<br>Research Scholar, PhD Student at IIT (BHU) Varanasi
+<br>Co-organizer of Tasks 1 (EN, Hinglish)
+
+* **[Krishna Tewari](https://www.linkedin.com/in/-krishna-tewari/) (Indian Institute of Technology (BHU) Varanasi, India)**
+<br>Research Scholar, PhD Student at IIT (BHU) Varanasi
+<br>Co-organizer of Tasks 1 (EN, Hinglish)
 
 
 <!---

@@ -44,13 +44,15 @@ To encourage research in humor-aware information retrieval, JOKER 2024 introduce
 
 ---
 
-* **17 November 2025**: Registration opens
-* **23 April 2026**: Registration closes
-* **7 May 2026**: End of Evaluation Cycle [submission of runs]
-* **28 May 2026**: Submission of Participant Papers [CEUR-WS]
-* **30 June 2026**: Notification of Acceptance for Participant Papers [CEUR-WS]
-* **6 July 2026**: Camera Ready Copy of Participant Papers
-* **21-24 September 2026**: CLEF conference at Jena, Germany
+* **November 17, 2025**: CLEF tracks registration opens
+* **April 23, 2026**: CLEF tracks registration closes
+* ~~**May 7, 2026**: End of Evaluation Cycle [submission of runs]~~
+* **June 1, 2026**: End of Evaluation Cycle [submission of runs]~~
+* ~~**May 28, 2026**: Submission of Participant Papers [CEUR-WS]~~
+* **June 8, 2026**: Submission of Participant Papers [CEUR-WS]
+* **June 30, 2026:** Notification of Acceptance for Participant Papers [CEUR-WS]
+* **July 6, 2026**: Camera Ready Copy of Participant Papers
+* **21-24 September 2026**: CLEF 2026 Conference
 
 
 ## How to participate

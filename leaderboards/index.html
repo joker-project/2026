@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JOKER 2026 Task 4 — Humour Generation Leaderboards</title>
+<style>
+  :root {
+    --bg: #0d1117; --bg-card: #161b22; --border: #30363d;
+    --text: #e6edf3; --text-mid: #9da7b3; --text-dim: #6e7681;
+    --primary: #a371f7; --gold: #e3b341;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 40px 20px;
+  }
+  .wrap { max-width: 860px; width: 100%; }
+  h1 { font-weight: 900; font-size: 28px; letter-spacing: -0.02em; }
+  h1 .accent { color: var(--primary); }
+  .sub { color: var(--text-mid); margin: 10px 0 6px; font-size: 14px; line-height: 1.6; }
+  .meta { color: var(--text-dim); font-size: 12px; margin-bottom: 28px;
+          font-family: 'JetBrains Mono', monospace; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 20px; text-decoration: none; color: var(--text);
+    transition: border-color .15s, transform .15s;
+  }
+  .card:hover { border-color: var(--primary); transform: translateY(-2px); }
+  .card-track { font-weight: 700; font-size: 17px; }
+  .card-count { color: var(--text-dim); font-size: 12px; margin: 4px 0 14px; }
+  .card-top { font-size: 13px; color: var(--text-mid);
+              font-family: 'JetBrains Mono', monospace; word-break: break-all; }
+  .card-bt { color: var(--gold); font-weight: 800; font-size: 20px; margin-top: 6px;
+             font-family: 'JetBrains Mono', monospace; }
+  footer { margin-top: 30px; color: var(--text-dim); font-size: 12px; line-height: 1.7; }
+  footer a { color: var(--primary); text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>JOKER 2026 · Task 4 <span class="accent">Humour Generation</span></h1>
+    <p class="sub">Final Bradley-Terry leaderboards from the CLEF 2026 JOKER lab shared task.
+    Rankings are fitted on ≈40,000 pairwise battles judged by a 3-judge cross-provider LLM
+    ensemble (gpt-oss-20b · deepseek-chat · gemini-2.5-flash-lite) under the constraint-aware
+    <code>pair-pun-v1</code> prompt, majority-aggregated, with 95% bootstrap confidence intervals.</p>
+    <div class="meta">365 distinct runs · 4 teams · frozen snapshot</div>
+    <div class="cards">
+      <a class="card" href="en.html">
+        <div class="card-track">English track</div>
+        <div class="card-count">98 runs ranked</div>
+        <div class="card-top">🏆 jayi2525 · SaLT_task4_KimiCSF</div>
+        <div class="card-bt">1257 BT</div>
+      </a>
+      <a class="card" href="es.html">
+        <div class="card-track">Spanish track</div>
+        <div class="card-count">134 runs ranked</div>
+        <div class="card-top">🏆 jayi2525 · SaLT_task4_KimiCSF</div>
+        <div class="card-bt">1515 BT</div>
+      </a>
+      <a class="card" href="fr.html">
+        <div class="card-track">French track</div>
+        <div class="card-count">133 runs ranked</div>
+        <div class="card-top">🏆 jayi2525 · SaLT_task4_KimiCSF</div>
+        <div class="card-bt">1395 BT</div>
+      </a>
+    </div>
+    <footer>
+      Runs are deduplicated by participant-declared run_id. Evaluation methodology and full
+      results: see the JOKER 2026 Task 4 overview paper ·
+      <a href="https://www.joker-project.com">joker-project.com</a><br>
+      Download: <a href="task4_leaderboard_all.csv" download>all tracks (CSV)</a> ·
+      <a href="task4_leaderboard_en.csv" download>EN</a> ·
+      <a href="task4_leaderboard_es.csv" download>ES</a> ·
+      <a href="task4_leaderboard_fr.csv" download>FR</a>
+    </footer>
+  </div>
+</body>
+</html>

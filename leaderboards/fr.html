@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JOKER 2026 Task 4 — French leaderboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Inter:wght@400;500;700;900&display=swap');
+
+  /* Joker palette — must match app.py so the iframe blends with the page.
+     Same hex values, same tri-level text scale, same muted accents. */
+  :root {
+    --bg: #0d0a18;
+    --surface: #17132a;
+    --surface-2: #1d1734;
+    --border: #2a2148;
+    --border-strong: #3a2d5e;
+    --text-bright: #b9b0d2;
+    --text: #948aae;
+    --text-dim: #635a78;
+    --primary: #67c25a;
+    --primary-glow: rgba(103,194,90,0.10);
+    --secondary: #9c7bcc;
+    --accent: #d062b1;
+    /* Rank colors — desaturated metallic tones so they don't compete with
+       the muted body. Rank-1 sits between gold and amber, less garish. */
+    --rank1: #c9a85a;
+    --rank2: #9c93ad;
+    --rank3: #b07a5a;
+    --ci-bar: rgba(156,123,204,0.22);
+    --ci-mean: #9c7bcc;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background:
+      radial-gradient(ellipse at top right, rgba(156,123,204,0.06), transparent 60%),
+      var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+    min-height: 100vh;
+    font-weight: 400;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+  }
+  .header-left h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-bright);
+  }
+  .header-left .track-badge {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 3px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text-dim);
+    border-radius: 3px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .header-right {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    line-height: 1.8;
+  }
+  .header-right .live-dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+    margin-right: 4px;
+    opacity: 0.6;
+    animation: pulse 2.5s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 0.2; }
+  }
+
+  /* TABLE */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  thead th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.15s;
+  }
+  thead th:hover { color: var(--text); }
+  thead th.sorted { color: var(--text-bright); }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  tbody tr:hover {
+    background: var(--primary-glow);
+  }
+  td {
+    padding: 16px 16px;
+    vertical-align: middle;
+    color: var(--text);
+  }
+
+  /* RANK COLUMN */
+  .rank {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    width: 60px;
+    text-align: center;
+  }
+  .rank-1 { color: var(--rank1); }
+  .rank-2 { color: var(--rank2); }
+  .rank-3 { color: var(--rank3); }
+  .rank-other { color: var(--text-dim); }
+
+  /* SYSTEM NAME */
+  .system-name {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: var(--text-bright);
+  }
+  tr:hover .system-name { color: var(--primary); }
+
+  /* RATING */
+  .rating {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: var(--text-bright);
+  }
+
+  /* CI */
+  .ci-cell {
+    min-width: 180px;
+  }
+  .ci-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+  }
+  .ci-bar-wrap {
+    width: 100%;
+    height: 3px;
+    background: var(--border);
+    border-radius: 2px;
+    position: relative;
+    overflow: visible;
+  }
+  .ci-bar-fill {
+    position: absolute;
+    top: 0; bottom: 0;
+    background: var(--ci-bar);
+    border-radius: 2px;
+  }
+  .ci-bar-mean {
+    position: absolute;
+    top: -2px; bottom: -2px;
+    width: 2px;
+    background: var(--ci-mean);
+    border-radius: 1px;
+    opacity: 0.85;
+  }
+
+  /* VOTES */
+  .votes {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-dim);
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="header-left">
+      <h1>LEADERBOARD</h1>
+      <a href="task4_leaderboard_fr.csv" download style="display:inline-block;margin-right:8px;padding:3px 10px;border:1px solid #30363d;border-radius:6px;color:#a371f7;font-family:'JetBrains Mono',monospace;font-size:11px;text-decoration:none;">&#8595; CSV</a><div class="track-badge" style="display:inline-block">AUTO · LLM JUDGE</div>
+    </div>
+    <div class="header-right">
+      <span class="live-dot"></span> FINAL<br>
+      2026-06-28 01:28 UTC
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th data-key="final_ranking" class="sorted">#</th>
+        <th data-key="system">SYSTEM</th>
+        <th data-key="rating">BT RATING</th>
+        <th>95% CI</th>
+        <th data-key="num_battles">VOTES</th>
+      </tr>
+    </thead>
+    <tbody id="lb-body"></tbody>
+  </table>
+
+  <div class="footer">
+    <span id="total-votes"></span>
+    <span id="last-updated"></span>
+  </div>
+  <div class="footer" style="border-top:none;padding-top:8px;">
+    <span>Equal ranks can happen when confidence intervals overlap.</span>
+    <span>Snapshot-based leaderboard updates.</span>
+  </div>
+</div>
+
+<script>
+const DATA = [{"system": "jayi2525 \u00b7 SaLT_task4_KimiCSF", "rating": 1394.85, "rating_q025": 1341.97, "rating_q975": 1449.45, "num_battles": 359, "final_ranking": 1}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_NOR13_DROP_R04", "rating": 1303.93, "rating_q025": 1244.89, "rating_q975": 1416.56, "num_battles": 181, "final_ranking": 2}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_PLUS_R01_fr_0975", "rating": 1297.56, "rating_q025": 1230.59, "rating_q975": 1371.95, "num_battles": 194, "final_ranking": 3}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_TOP21", "rating": 1295.2, "rating_q025": 1241.88, "rating_q975": 1411.91, "num_battles": 158, "final_ranking": 4}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_TOP16", "rating": 1292.83, "rating_q025": 1237.42, "rating_q975": 1374.81, "num_battles": 181, "final_ranking": 5}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_TOP1", "rating": 1289.68, "rating_q025": 1236.07, "rating_q975": 1357.07, "num_battles": 200, "final_ranking": 6}, {"system": "liana87 \u00b7 UBO_task3_gemini-3-flash_pun", "rating": 1278.8, "rating_q025": 1234.3, "rating_q975": 1340.87, "num_battles": 362, "final_ranking": 7}, {"system": "arampageos \u00b7 DUTH_Task4_gemma29bit_FR_balanced", "rating": 1276.68, "rating_q025": 1226.56, "rating_q975": 1360.31, "num_battles": 211, "final_ranking": 8}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R05", "rating": 1275.59, "rating_q025": 1210.16, "rating_q975": 1361.4, "num_battles": 176, "final_ranking": 9}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_NOR13_DROP_R02", "rating": 1273.73, "rating_q025": 1204.7, "rating_q975": 1358.07, "num_battles": 167, "final_ranking": 10}, {"system": "jayi2525 \u00b7 SaLT_task4_KimiPlain", "rating": 1272.06, "rating_q025": 1221.29, "rating_q975": 1318.03, "num_battles": 344, "final_ranking": 11}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_TOP22_CONFIRM", "rating": 1271.84, "rating_q025": 1207.88, "rating_q975": 1347.81, "num_battles": 190, "final_ranking": 12}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R02", "rating": 1271.55, "rating_q025": 1206.06, "rating_q975": 1334.07, "num_battles": 182, "final_ranking": 13}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R12", "rating": 1258.87, "rating_q025": 1179.55, "rating_q975": 1337.37, "num_battles": 202, "final_ranking": 14}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_PLUS_R20_fr_0804", "rating": 1256.17, "rating_q025": 1201.89, "rating_q975": 1340.07, "num_battles": 183, "final_ranking": 15}, {"system": "jayi2525 \u00b7 SaLT_task4_HumorGen14B", "rating": 1256.0, "rating_q025": 1203.05, "rating_q975": 1295.01, "num_battles": 351, "final_ranking": 16}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_NOR13_DROP_R08", "rating": 1247.75, "rating_q025": 1171.72, "rating_q975": 1310.82, "num_battles": 179, "final_ranking": 17}, {"system": "jayi2525 \u00b7 SaLT_task4_HumorGen32B", "rating": 1246.11, "rating_q025": 1204.63, "rating_q975": 1292.59, "num_battles": 357, "final_ranking": 18}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_analysis_FR_rule_generation_TOP3", "rating": 1245.62, "rating_q025": 1174.67, "rating_q975": 1314.23, "num_battles": 195, "final_ranking": 19}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_TOP22", "rating": 1242.37, "rating_q025": 1180.41, "rating_q975": 1291.69, "num_battles": 192, "final_ranking": 20}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_analysis_FR_rule_generation_TOP1", "rating": 1241.0, "rating_q025": 1178.38, "rating_q975": 1317.67, "num_battles": 164, "final_ranking": 21}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_PLUS_R02_fr_0973", "rating": 1240.83, "rating_q025": 1174.38, "rating_q975": 1313.67, "num_battles": 193, "final_ranking": 22}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_NOR13_DROP_R03", "rating": 1238.65, "rating_q025": 1182.09, "rating_q975": 1312.72, "num_battles": 181, "final_ranking": 23}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R09", "rating": 1236.3, "rating_q025": 1166.51, "rating_q975": 1319.69, "num_battles": 181, "final_ranking": 24}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R04", "rating": 1235.56, "rating_q025": 1178.27, "rating_q975": 1310.92, "num_battles": 190, "final_ranking": 25}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R14", "rating": 1227.24, "rating_q025": 1171.07, "rating_q975": 1295.44, "num_battles": 186, "final_ranking": 26}, {"system": "arampageos \u00b7 DUTH_Task4_FR_IDEXACT_FROM_EN_TOP5", "rating": 1226.96, "rating_q025": 1164.58, "rating_q975": 1314.69, "num_battles": 174, "final_ranking": 27}, {"system": "arampageos \u00b7 DUTH_Task4_HYBRIDEXACT_FR", "rating": 1226.89, "rating_q025": 1167.38, "rating_q975": 1315.9, "num_battles": 161, "final_ranking": 28}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_BUCKET_03", "rating": 1212.91, "rating_q025": 1152.88, "rating_q975": 1261.86, "num_battles": 186, "final_ranking": 29}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_TOP23", "rating": 1210.62, "rating_q025": 1141.94, "rating_q975": 1289.4, "num_battles": 172, "final_ranking": 30}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_NOR13_DROP_R05", "rating": 1210.36, "rating_q025": 1159.38, "rating_q975": 1270.19, "num_battles": 188, "final_ranking": 31}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK20_DROP_R20_fr_1319", "rating": 1210.05, "rating_q025": 1139.9, "rating_q975": 1290.46, "num_battles": 160, "final_ranking": 32}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R13", "rating": 1204.4, "rating_q025": 1148.13, "rating_q975": 1284.07, "num_battles": 174, "final_ranking": 33}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_TOP20", "rating": 1201.07, "rating_q025": 1147.03, "rating_q975": 1284.75, "num_battles": 196, "final_ranking": 34}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R07", "rating": 1200.27, "rating_q025": 1144.19, "rating_q975": 1255.44, "num_battles": 172, "final_ranking": 35}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R06", "rating": 1198.83, "rating_q025": 1154.07, "rating_q975": 1258.56, "num_battles": 171, "final_ranking": 36}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R15", "rating": 1194.0, "rating_q025": 1142.6, "rating_q975": 1251.2, "num_battles": 195, "final_ranking": 37}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_PLUS_R17_fr_1271", "rating": 1192.13, "rating_q025": 1132.45, "rating_q975": 1244.62, "num_battles": 173, "final_ranking": 38}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_NOR13_PLUS_R23", "rating": 1192.13, "rating_q025": 1130.85, "rating_q975": 1243.9, "num_battles": 168, "final_ranking": 39}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_analysis_FR_rule_generation_TOP2", "rating": 1191.34, "rating_q025": 1133.74, "rating_q975": 1248.58, "num_battles": 168, "final_ranking": 40}, {"system": "ezrasmink \u00b7 UAms_task4_Chocolatine-2-14B-Instruct-v2.0.3", "rating": 1191.32, "rating_q025": 1149.23, "rating_q975": 1229.62, "num_battles": 332, "final_ranking": 41}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK22_DROP_R01", "rating": 1185.6, "rating_q025": 1114.84, "rating_q975": 1262.47, "num_battles": 182, "final_ranking": 42}, {"system": "arampageos \u00b7 DUTH_Task4_FR_IDEXACT_FROM_EN_TOP12", "rating": 1184.38, "rating_q025": 1139.17, "rating_q975": 1240.27, "num_battles": 204, "final_ranking": 43}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_PLUS_R18_fr_0319", "rating": 1184.09, "rating_q025": 1111.85, "rating_q975": 1278.39, "num_battles": 161, "final_ranking": 44}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK_NOR13_DROP_R01", "rating": 1182.71, "rating_q025": 1120.54, "rating_q975": 1265.23, "num_battles": 166, "final_ranking": 45}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_BUCKET_00", "rating": 1176.83, "rating_q025": 1118.49, "rating_q975": 1241.91, "num_battles": 157, "final_ranking": 46}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_BUCKET_09", "rating": 1146.54, "rating_q025": 1103.11, "rating_q975": 1197.29, "num_battles": 212, "final_ranking": 47}, {"system": "arampageos \u00b7 DUTH_Task4_HYBRIDSTRONG_FR", "rating": 1142.48, "rating_q025": 1094.65, "rating_q975": 1211.26, "num_battles": 181, "final_ranking": 48}, {"system": "arampageos \u00b7 DUTH_Task4_FR_LEAK20_DROP_R03_fr_1302", "rating": 1137.47, "rating_q025": 1081.88, "rating_q975": 1201.16, "num_battles": 217, "final_ranking": 49}, {"system": "liana87 \u00b7 UBO_task3_qwen-3-flash_pun", "rating": 1130.13, "rating_q025": 1092.46, "rating_q975": 1164.95, "num_battles": 410, "final_ranking": 50}, {"system": "arampageos \u00b7 DUTH_Task4_FR_IDEXACT_FROM_EN_TOP20", "rating": 1091.07, "rating_q025": 1032.08, "rating_q975": 1145.32, "num_battles": 187, "final_ranking": 51}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_analysis_FR_rule_generation_TOP40", "rating": 1076.19, "rating_q025": 1023.85, "rating_q975": 1124.04, "num_battles": 176, "final_ranking": 52}, {"system": "arampageos \u00b7 DUTH_Task4_FR_STRONG_one_liner", "rating": 1073.61, "rating_q025": 1036.95, "rating_q975": 1114.75, "num_battles": 383, "final_ranking": 53}, {"system": "arampageos \u00b7 DUTH_Task4_FR_STRONG_balanced", "rating": 1052.69, "rating_q025": 1014.76, "rating_q975": 1088.61, "num_battles": 356, "final_ranking": 54}, {"system": "liana87 \u00b7 UBO_task3_llama-3_pun", "rating": 1035.95, "rating_q025": 989.36, "rating_q975": 1076.53, "num_battles": 342, "final_ranking": 55}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_analysis_FR_rule_generation_TOP60", "rating": 1035.92, "rating_q025": 970.97, "rating_q975": 1098.11, "num_battles": 173, "final_ranking": 56}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_TOP61", "rating": 1031.68, "rating_q025": 983.18, "rating_q975": 1087.08, "num_battles": 187, "final_ranking": 57}, {"system": "arampageos \u00b7 DUTH_Task4_FR_AN60_PUNWORD_SENSES_ALL_BUCKET_10", "rating": 1028.15, "rating_q025": 976.92, "rating_q975": 1075.79, "num_battles": 196, "final_ranking": 58}, {"system": "liana87 \u00b7 UBO_task3_gemma-3_pun", "rating": 1021.54, "rating_q025": 973.28, "rating_q975": 1062.49, "num_battles": 350, "final_ranking": 59}, {"system": "liana87 \u00b7 UBO_task3_mistral-3_pun", "rating": 1021.45, "rating_q025": 981.96, "rating_q975": 1051.91, "num_battles": 325, "final_ranking": 60}, {"system": "arampageos \u00b7 DUTH_Task4_FR_WIN_PLUS_TOP40", "rating": 998.83, "rating_q025": 943.56, "rating_q975": 1052.18, "num_battles": 209, "final_ranking": 61}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_TOP60_PLUS_R61_R65", "rating": 998.8, "rating_q025": 948.69, "rating_q975": 1051.71, "num_battles": 204, "final_ranking": 62}, {"system": "arampageos \u00b7 DUTH_Task4_FR_SAFE_CONFIRM", "rating": 985.67, "rating_q025": 936.77, "rating_q975": 1024.09, "num_battles": 293, "final_ranking": 63}, {"system": "arampageos \u00b7 DUTH_Task4_FR_AN60_PUNWORD_SENSES_ALL_BUCKET_03", "rating": 984.49, "rating_q025": 929.51, "rating_q975": 1037.05, "num_battles": 176, "final_ranking": 64}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL2_TOP3", "rating": 982.25, "rating_q025": 947.02, "rating_q975": 1015.58, "num_battles": 308, "final_ranking": 65}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL2_TOP3_DROP_R03", "rating": 976.09, "rating_q025": 923.61, "rating_q975": 1023.77, "num_battles": 285, "final_ranking": 66}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_TOP65", "rating": 974.07, "rating_q025": 910.14, "rating_q975": 1020.53, "num_battles": 167, "final_ranking": 67}, {"system": "arampageos \u00b7 DUTH_Task4_FR_AN60_PUNWORD_SENSES_ALL_BUCKET_00", "rating": 973.57, "rating_q025": 920.12, "rating_q975": 1014.68, "num_battles": 180, "final_ranking": 68}, {"system": "arampageos \u00b7 DUTH_Task4_FR_AN60_PUNWORD_SENSES_ALL_BUCKET_02", "rating": 970.51, "rating_q025": 903.05, "rating_q975": 1028.34, "num_battles": 172, "final_ranking": 69}, {"system": "arampageos \u00b7 DUTH_Task4_FR_AN60_PUNWORD_SENSES_ALL_BUCKET_01", "rating": 961.7, "rating_q025": 908.59, "rating_q975": 1011.81, "num_battles": 181, "final_ranking": 70}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL_BUCKET_00", "rating": 961.47, "rating_q025": 911.1, "rating_q975": 1019.48, "num_battles": 259, "final_ranking": 71}, {"system": "ezrasmink \u00b7 UAms_task4_Mistral-7B-Instruct-v0.2", "rating": 961.32, "rating_q025": 909.78, "rating_q975": 1001.31, "num_battles": 314, "final_ranking": 72}, {"system": "arampageos \u00b7 DUTH_Task4_FR_SAFE_MIX_TOP80_PATCH_B00", "rating": 958.96, "rating_q025": 916.22, "rating_q975": 1012.84, "num_battles": 288, "final_ranking": 73}, {"system": "arampageos \u00b7 DUTH_Task4_FR_FAMILY_TF_TOP12", "rating": 955.89, "rating_q025": 906.18, "rating_q975": 1011.56, "num_battles": 226, "final_ranking": 74}, {"system": "arampageos \u00b7 DUTH_Task4_FR_SAFE_PLUS_TOP80_B12_00", "rating": 955.74, "rating_q025": 910.25, "rating_q975": 999.44, "num_battles": 293, "final_ranking": 75}, {"system": "arampageos \u00b7 DUTH_Task4_BASELINE_FR_SAFE", "rating": 955.41, "rating_q025": 911.79, "rating_q975": 1000.65, "num_battles": 288, "final_ranking": 76}, {"system": "arampageos \u00b7 DUTH_Task4_FR_ANALYSIS_TOP80", "rating": 954.12, "rating_q025": 902.62, "rating_q975": 1000.69, "num_battles": 209, "final_ranking": 77}, {"system": "arampageos \u00b7 DUTH_Task4_FR_SAFE_PLUS_TOP80_B12_01", "rating": 953.03, "rating_q025": 898.28, "rating_q975": 1006.84, "num_battles": 301, "final_ranking": 78}, {"system": "arampageos \u00b7 DUTH_Task4_FR_FAMILY_BUCKET_00", "rating": 952.3, "rating_q025": 904.92, "rating_q975": 1007.29, "num_battles": 231, "final_ranking": 79}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_DROP_ID_fr_1382", "rating": 951.24, "rating_q025": 893.55, "rating_q975": 1014.28, "num_battles": 187, "final_ranking": 80}, {"system": "arampageos \u00b7 DUTH_Task4_FR_B00_PLUS_SENSEA_BUCKET01", "rating": 950.98, "rating_q025": 893.74, "rating_q975": 1006.06, "num_battles": 185, "final_ranking": 81}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL_TOP1", "rating": 948.59, "rating_q025": 900.51, "rating_q975": 993.02, "num_battles": 303, "final_ranking": 82}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_DROP_ID_fr_1390", "rating": 947.27, "rating_q025": 902.4, "rating_q975": 1005.24, "num_battles": 191, "final_ranking": 83}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_DROP_ID_fr_0904", "rating": 941.61, "rating_q025": 873.18, "rating_q975": 1001.49, "num_battles": 173, "final_ranking": 84}, {"system": "arampageos \u00b7 DUTH_Task4_BASELINE_FR_TOP80", "rating": 940.71, "rating_q025": 888.16, "rating_q975": 982.73, "num_battles": 252, "final_ranking": 85}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL_TOP5", "rating": 940.38, "rating_q025": 889.66, "rating_q975": 978.64, "num_battles": 287, "final_ranking": 86}, {"system": "arampageos \u00b7 DUTH_Task4_FR_SAFE_PLUS_TOP80_FULL", "rating": 939.68, "rating_q025": 896.2, "rating_q975": 988.14, "num_battles": 259, "final_ranking": 87}, {"system": "arampageos \u00b7 DUTH_Task4_FR_AN60_PUNWORD_SENSEA_UNPATCHED_BUCKET_10", "rating": 938.1, "rating_q025": 884.06, "rating_q975": 979.7, "num_battles": 195, "final_ranking": 88}, {"system": "arampageos \u00b7 DUTH_Task4_FR_FAMILY_ONLY_QUESTION", "rating": 937.21, "rating_q025": 888.63, "rating_q975": 981.39, "num_battles": 196, "final_ranking": 89}, {"system": "arampageos \u00b7 DUTH_Task4_FR_FAMILY_TOP1", "rating": 936.5, "rating_q025": 877.34, "rating_q975": 985.67, "num_battles": 169, "final_ranking": 90}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL2_TOP2", "rating": 935.11, "rating_q025": 875.32, "rating_q975": 987.17, "num_battles": 234, "final_ranking": 91}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL_BUCKET_01", "rating": 933.62, "rating_q025": 882.21, "rating_q975": 971.55, "num_battles": 297, "final_ranking": 92}, {"system": "arampageos \u00b7 DUTH_Task4_FR_FAMILY_TOP8", "rating": 929.69, "rating_q025": 870.92, "rating_q975": 982.66, "num_battles": 180, "final_ranking": 93}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_DROP_ID_fr_0093", "rating": 927.47, "rating_q025": 865.46, "rating_q975": 989.13, "num_battles": 190, "final_ranking": 94}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_PLUS_MIXSHORT_B00", "rating": 927.29, "rating_q025": 877.63, "rating_q975": 974.39, "num_battles": 212, "final_ranking": 95}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_DROP_ID_fr_1093", "rating": 927.2, "rating_q025": 865.66, "rating_q975": 978.1, "num_battles": 196, "final_ranking": 96}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST891_PLUS_SENSEA_B02", "rating": 922.12, "rating_q025": 885.62, "rating_q975": 972.64, "num_battles": 204, "final_ranking": 97}, {"system": "arampageos \u00b7 DUTH_Task4_FR_FAMILY_TOP20", "rating": 922.05, "rating_q025": 873.89, "rating_q975": 959.24, "num_battles": 213, "final_ranking": 98}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_DROP_ID_fr_1452", "rating": 918.85, "rating_q025": 861.68, "rating_q975": 960.48, "num_battles": 217, "final_ranking": 99}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL_TOP3", "rating": 916.94, "rating_q025": 853.76, "rating_q975": 967.83, "num_battles": 292, "final_ranking": 100}, {"system": "arampageos \u00b7 DUTH_Task4_FR_B00_PLUS_SENSEA_BUCKET00", "rating": 916.43, "rating_q025": 854.68, "rating_q975": 974.34, "num_battles": 194, "final_ranking": 101}, {"system": "arampageos \u00b7 DUTH_Task4_FR_B00_PLUS_SENSEA_BUCKET11", "rating": 905.97, "rating_q025": 853.25, "rating_q975": 965.18, "num_battles": 197, "final_ranking": 102}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST891_PLUS_SENSEA_B04", "rating": 902.0, "rating_q025": 851.65, "rating_q975": 968.69, "num_battles": 201, "final_ranking": 103}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL_TOP20", "rating": 901.79, "rating_q025": 862.97, "rating_q975": 953.44, "num_battles": 282, "final_ranking": 104}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_DROP_ID_fr_1395", "rating": 899.88, "rating_q025": 843.91, "rating_q975": 947.94, "num_battles": 192, "final_ranking": 105}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST891_PLUS_SENSEA_B01", "rating": 897.73, "rating_q025": 839.74, "rating_q975": 936.38, "num_battles": 194, "final_ranking": 106}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_CONFIRM", "rating": 892.0, "rating_q025": 833.02, "rating_q975": 949.29, "num_battles": 166, "final_ranking": 107}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TRAINSEL2_TOP8", "rating": 891.28, "rating_q025": 839.0, "rating_q975": 933.78, "num_battles": 289, "final_ranking": 108}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_DROP_ID_fr_1615", "rating": 884.72, "rating_q025": 822.72, "rating_q975": 935.87, "num_battles": 185, "final_ranking": 109}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST891_PLUS_SENSEA_B03", "rating": 876.55, "rating_q025": 818.46, "rating_q975": 914.83, "num_battles": 217, "final_ranking": 110}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST891_PLUS_PUNSENSE_B11", "rating": 875.12, "rating_q025": 838.25, "rating_q975": 928.96, "num_battles": 208, "final_ranking": 111}, {"system": "arampageos \u00b7 DUTH_Task4_FR_BEST894_PLUS_SENSEA_B01", "rating": 819.83, "rating_q025": 763.34, "rating_q975": 867.32, "num_battles": 210, "final_ranking": 112}, {"system": "arampageos \u00b7 DUTH_Task4_BASELINE_FR_PATCH", "rating": 806.41, "rating_q025": 746.16, "rating_q975": 845.64, "num_battles": 274, "final_ranking": 113}, {"system": "arampageos \u00b7 DUTH_Task4_BASELINE_FR_ALLRULE", "rating": 797.87, "rating_q025": 754.43, "rating_q975": 834.37, "num_battles": 305, "final_ranking": 114}, {"system": "arampageos \u00b7 DUTH_Task4_NEARESTREF_FR", "rating": 692.33, "rating_q025": 621.96, "rating_q975": 728.14, "num_battles": 342, "final_ranking": 115}, {"system": "arampageos \u00b7 DUTH_Task4_FR_FAMILY_TOP60", "rating": 692.16, "rating_q025": 625.06, "rating_q975": 737.05, "num_battles": 271, "final_ranking": 116}, {"system": "liana87 \u00b7 UBO_task3_mistral_contrepetrie", "rating": 681.57, "rating_q025": 629.67, "rating_q975": 719.28, "num_battles": 378, "final_ranking": 117}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TESTFIELD_DOUBLE_MEANING", "rating": 668.42, "rating_q025": 625.49, "rating_q975": 711.15, "num_battles": 363, "final_ranking": 118}, {"system": "liana87 \u00b7 UBO_task3_llama_contrepetrie", "rating": 662.03, "rating_q025": 613.4, "rating_q975": 702.93, "num_battles": 348, "final_ranking": 119}, {"system": "liana87 \u00b7 UBO_task3_gemini-3-flash_contrepetrie", "rating": 655.0, "rating_q025": 600.99, "rating_q975": 706.49, "num_battles": 331, "final_ranking": 120}, {"system": "liana87 \u00b7 UBO_task3_qwen-3-flash_contrepetrie", "rating": 643.95, "rating_q025": 576.57, "rating_q975": 694.42, "num_battles": 356, "final_ranking": 121}, {"system": "arampageos \u00b7 DUTH_Task4_BASELINE_FR_PUNWORD", "rating": 641.9, "rating_q025": 590.95, "rating_q975": 690.33, "num_battles": 340, "final_ranking": 122}, {"system": "liana87 \u00b7 UBO_task3_gemma_contrepetrie", "rating": 618.02, "rating_q025": 564.11, "rating_q975": 660.6, "num_battles": 355, "final_ranking": 123}, {"system": "arampageos \u00b7 DUTH_Task4_FR_FAMILY_TOP100", "rating": 585.38, "rating_q025": 514.77, "rating_q975": 665.86, "num_battles": 272, "final_ranking": 124}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TESTFIELD_QA_BASELINE", "rating": 570.09, "rating_q025": 516.52, "rating_q975": 612.38, "num_battles": 321, "final_ranking": 125}, {"system": "ezrasmink \u00b7 UAms_task4_flan-t5-large", "rating": 558.29, "rating_q025": 489.91, "rating_q975": 603.64, "num_battles": 329, "final_ranking": 126}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TESTFIELD_COMPACT_HINT", "rating": 509.48, "rating_q025": 444.73, "rating_q975": 563.05, "num_battles": 333, "final_ranking": 127}, {"system": "ezrasmink \u00b7 UAms_task4_flan-t5-base", "rating": 508.23, "rating_q025": 442.33, "rating_q975": 566.98, "num_battles": 330, "final_ranking": 128}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TESTFIELD_SENSES_ONLY", "rating": 461.61, "rating_q025": 396.75, "rating_q975": 515.2, "num_battles": 359, "final_ranking": 129}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TESTFIELD_MIX_SHORT", "rating": 424.75, "rating_q025": 358.5, "rating_q975": 477.96, "num_battles": 304, "final_ranking": 130}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TESTFIELD_PUNWORD_SENSES", "rating": 414.13, "rating_q025": 354.94, "rating_q975": 464.42, "num_battles": 363, "final_ranking": 131}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TESTFIELD_PUNWORD", "rating": 408.49, "rating_q025": 351.33, "rating_q975": 455.14, "num_battles": 345, "final_ranking": 132}, {"system": "arampageos \u00b7 DUTH_Task4_FR_TESTFIELD_PUNWORD_SENSEA", "rating": 321.29, "rating_q025": 237.81, "rating_q975": 389.64, "num_battles": 316, "final_ranking": 133}];
+const TOTAL_BATTLES = 40769;
+const UPDATED = "2026-06-28 01:28 UTC";
+const METHOD = "bt";
+let sortKey = "final_ranking", sortDir = "asc";
+
+function rankClass(r) {
+  if (r===1) return "rank-1";
+  if (r===2) return "rank-2";
+  if (r===3) return "rank-3";
+  return "rank-other";
+}
+
+function render() {
+  const d = [...DATA].sort((a,b) => {
+    const va=a[sortKey], vb=b[sortKey];
+    if (va<vb) return sortDir==="asc"?-1:1;
+    if (va>vb) return sortDir==="asc"?1:-1;
+    return 0;
+  });
+
+  const lo = d.map(x=>x.rating_q025), hi = d.map(x=>x.rating_q975);
+  let mn = Math.min(...lo), mx = Math.max(...hi), rng = mx-mn||100;
+
+  document.getElementById("lb-body").innerHTML = d.map(r => {
+    const lp = ((r.rating_q025-mn)/rng)*100;
+    const wp = ((r.rating_q975-r.rating_q025)/rng)*100;
+    const mp = ((r.rating-mn)/rng)*100;
+    return `<tr>
+      <td class="rank ${rankClass(r.final_ranking)}">${r.final_ranking}</td>
+      <td class="system-name">${r.system}</td>
+      <td class="rating">${Math.round(r.rating)}</td>
+      <td class="ci-cell">
+        <div class="ci-label">${Math.round(r.rating_q025)} — ${Math.round(r.rating_q975)}</div>
+        <div class="ci-bar-wrap">
+          <div class="ci-bar-fill" style="left:${lp}%;width:${wp}%"></div>
+          <div class="ci-bar-mean" style="left:${mp}%"></div>
+        </div>
+      </td>
+      <td class="votes">${r.num_battles}</td>
+    </tr>`;
+  }).join("");
+
+  document.getElementById("total-votes").textContent = TOTAL_BATTLES + " BATTLES";
+  document.getElementById("last-updated").textContent = UPDATED + " · " + METHOD.toUpperCase();
+}
+
+document.querySelectorAll("th[data-key]").forEach(th => {
+  th.addEventListener("click", () => {
+    const k = th.getAttribute("data-key");
+    document.querySelectorAll("th").forEach(t => t.classList.remove("sorted"));
+    th.classList.add("sorted");
+    if (sortKey===k) sortDir = sortDir==="asc"?"desc":"asc";
+    else { sortKey=k; sortDir = k==="final_ranking"?"asc":"desc"; }
+    render();
+  });
+});
+
+render();
+</script>
+</body>
+</html>

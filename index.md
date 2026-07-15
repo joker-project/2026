@@ -25,6 +25,7 @@ The JOKER Lab, now in its fifth year, aims to bring together social and computer
     - EN-FR Codabench: https://www.codabench.org/competitions/16309/
   - **Task 3** Onomastic Wordplay Translation: translate onomastic wordplay from English to French
   - **Task 4** Humour Generation: guided creativity
+    - Final leaderboards: [English](./leaderboards/en.html) · [Spanish](./leaderboards/es.html) · [French](./leaderboards/fr.html) ([overview](./leaderboards/), [CSV](./leaderboards/task4_leaderboard_all.csv))
   - **Task 5** JOKER 2022-2024 revisited: Previous tasks by popular requests (pun detection EN/FR/ES, pun location EN/FR/ES)
 
 

@@ -36,7 +36,7 @@ JOKER Track sessions take place in **Unknown Room**, except for the plenary CLEF
 
 ### Best of Labs, 2025 (Lecture Room 3)
 
-* **12:05 - 12:30** **Russell Taylor**, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
+* **12:05 - 12:30** <ins>Russell Taylor</ins>, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
 
 ## Thursday 24th September 
 
@@ -44,29 +44,29 @@ JOKER Track sessions take place in **Unknown Room**, except for the plenary CLEF
 
 * **11:00-12:00** CLEF 2026 JOKER Task Overviews:
 
-* __Poojan Vachharajani__, Arjun Mukherjee, Jasvindar Singh, Krishna Tewari, Sukomal Pal, Jaap Kamps, Liana Ermakova 
+* <ins>Poojan Vachharajani</ins>, Arjun Mukherjee, Jasvindar Singh, Krishna Tewari, Sukomal Pal, Jaap Kamps, Liana Ermakova 
 _Overview of the CLEF 2026 JOKER Task 1: Humor-Aware Information Retrieval in English and Hinglish_, 4116-4129
 ([Paper](https://clef-staging.pages.dev/paper302.pdf)).
 
-* __Liana Ermakova__, Yael Naud, Lilian Binet, Baptiste Dumas, Jaap Kamps
+* <ins>Liana Ermakova</ins>, Yael Naud, Lilian Binet, Baptiste Dumas, Jaap Kamps
 _Overview of the CLEF 2026 JOKER Task 2: Pun Translation from English to French_, 4130-4144
 ([Paper](https://clef-staging.pages.dev/paper303.pdf)).
 
-* __Liana Ermakova__, Yael Naud, Lilian Binet, Jaap Kamps
+* <ins>Liana Ermakova</ins>, Yael Naud, Lilian Binet, Jaap Kamps
 _Overview of the CLEF 2026 JOKER Task 3: Onomastic Wordplay Translation from English to French_, 4145-4153
 ([Paper](https://clef-staging.pages.dev/paper304.pdf)).
 
-* __Igor Kuzmin__, Anne-Gwenn Bosser, Jaap Kamps, Liana Ermakova
+* <ins>Igor Kuzmin</ins>, Anne-Gwenn Bosser, Jaap Kamps, Liana Ermakova
 _Overview of the CLEF 2026 JOKER Task 4: Humor Generation in English, French, and Spanish_, 4154-4179
 ([Paper](https://clef-staging.pages.dev/paper305.pdf)).
 
 * **12:00	–	12:30** CLEF 2026 JOKER Participant presentations:
 
-* Jesse van Bakel, Robin Flier, __Ezra Smink__, Jan Bakker, Jaap Kamps
+* Jesse van Bakel, Robin Flier, <ins>Ezra Smink</ins>, Jan Bakker, Jaap Kamps
 _University of Amsterdam at the CLEF 2026 JOKER Track_, 4307-4319
 ([Paper](https://clef-staging.pages.dev/paper315.pdf)).
 
-* __Liana Ermakova__, Yaël Naud, Lilian Binet, Baptiste Dumas
+* <ins>Liana Ermakova</ins>, Yaël Naud, Lilian Binet, Baptiste Dumas
 _Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour Generation. UBO at CLEF 2026_,  4237-4245
 ([Paper](https://clef-staging.pages.dev/paper309.pdf)).
 
@@ -74,15 +74,15 @@ _Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour
 
 * **14:00	–	15:30** CLEF 2026 JOKER Participant presentations:
 
-* __Ana-Maria Luisa Mocanu__, Sebastian Mocanu, Ciprian-Octavian Truică, Elena-Simona Apostol
+* <ins>Ana-Maria Luisa Mocanu</ins>, Sebastian Mocanu, Ciprian-Octavian Truică, Elena-Simona Apostol
 _IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4246-4262
 ([Paper](https://clef-staging.pages.dev/paper310.pdf)).
 
-* __Russell Taylor__, Adam Brikman, Prateek Awate
+* <ins>Russell Taylor</ins>, Adam Brikman, Prateek Awate
 _Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Multi-Evaluator Ranking for Cross-Lingual Pun Translation at CLEF 2026 JOKER Task 2_, 4295-4306
 ([Paper](https://clef-staging.pages.dev/paper314.pdf)).
 
-* __Edward Ajayi__, Prasenjit Mitra
+* <ins>Edward Ajayi</ins>, Prasenjit Mitra
 _Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT Lab at CLEF 2026 JOKER Track_, 4180-4195
 ([Paper](https://clef-staging.pages.dev/paper306.pdf)).
 
@@ -90,7 +90,7 @@ _Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT 
 
 * (Time for additional talks, depending on demand, from the JOKER track.) 
 
-* **12:15 - 12:30** Additional participants' talks, Round table and break-out JOKER 2026 discussion
+* **15:15 - 15:30** Round table and breakout JOKER 2026 discussion
     * We want to hear from *you*!
     * What was great about 2026, and what could we improve for you?
       * Focus on humor generation?

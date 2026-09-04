@@ -32,11 +32,11 @@ JOKER Track sessions take place in **Unknown Room**, except for the plenary CLEF
 
 ### Lab Overviews 3 (Lecture Room 3)
 
-* **11:15 - 12:05** __Liana Ermakova__, Igor Kuzmin, Poojan Vachharajani, Tristan Miller, Anne-Gwenn Bosser and Jaap Kamps, _Overview of the CLEF 2026 JOKER Track: Humor Detection, Search, and Translation_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
+* **11:15 - 12:05** <ins>Liana Ermakova</ins>, Igor Kuzmin, Poojan Vachharajani, Tristan Miller, Anne-Gwenn Bosser and Jaap Kamps, _Overview of the CLEF 2026 JOKER Track: Humor Detection, Search, and Translation_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
 
 ### Best of Labs, 2025 (Lecture Room 3)
 
-* **12:05 - 12:30** Russell Taylor, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
+* **12:05 - 12:30** **Russell Taylor**, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
 
 ## Thursday 24th September 
 

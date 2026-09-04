@@ -90,7 +90,7 @@ _Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT 
 
 * (Time for additional talks, depending on demand, from the JOKER track.) 
 
-* **15:15 - 15:30** Round table and breakout JOKER 2026 discussion
+* **15:15 - 15:30** CLEF 2027 JOKER Planning Session:
     * We want to hear from *you*!
     * What was great about 2026, and what could we improve for you?
       * Focus on humor generation?

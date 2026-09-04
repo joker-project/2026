@@ -32,7 +32,7 @@ JOKER Track sessions take place in **Unknown Room**, except for the plenary CLEF
 
 ### Lab Overviews 3 (Lecture Room 3)
 
-* **11:15 - 12:05** Liana Ermakova, Igor Kuzmin, Poojan Vachharajani, Tristan Miller, Anne-Gwenn Bosser and Jaap Kamps, _Overview of the CLEF 2026 JOKER Track: Humor Detection, Search, and Translation_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
+* **11:15 - 12:05** __Liana Ermakova__, Igor Kuzmin, Poojan Vachharajani, Tristan Miller, Anne-Gwenn Bosser and Jaap Kamps, _Overview of the CLEF 2026 JOKER Track: Humor Detection, Search, and Translation_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
 
 ### Best of Labs, 2025 (Lecture Room 3)
 
@@ -42,13 +42,62 @@ JOKER Track sessions take place in **Unknown Room**, except for the plenary CLEF
 
 ### JOKER Track Session 1/2 (Room ???)
 
-* **11:00-12:30** CLEF 2026 JOKER Task Overviews:
+* **11:00-12:00** CLEF 2026 JOKER Task Overviews:
+
+* __Poojan Vachharajani__, Arjun Mukherjee, Jasvindar Singh, Krishna Tewari, Sukomal Pal, Jaap Kamps, Liana Ermakova 
+_Overview of the CLEF 2026 JOKER Task 1: Humor-Aware Information Retrieval in English and Hinglish_, 4116-4129
+([Paper](https://clef-staging.pages.dev/paper302.pdf)).
+
+* __Liana Ermakova__, Yael Naud, Lilian Binet, Baptiste Dumas, Jaap Kamps
+_Overview of the CLEF 2026 JOKER Task 2: Pun Translation from English to French_, 4130-4144
+([Paper](https://clef-staging.pages.dev/paper303.pdf)).
+
+* __Liana Ermakova__, Yael Naud, Lilian Binet, Jaap Kamps
+_Overview of the CLEF 2026 JOKER Task 3: Onomastic Wordplay Translation from English to French_, 4145-4153
+([Paper](https://clef-staging.pages.dev/paper304.pdf)).
+
+* __Igor Kuzmin__, Anne-Gwenn Bosser, Jaap Kamps, Liana Ermakova
+_Overview of the CLEF 2026 JOKER Task 4: Humor Generation in English, French, and Spanish_, 4154-4179
+([Paper](https://clef-staging.pages.dev/paper305.pdf)).
+
+* **12:00	–	12:30** CLEF 2026 JOKER Participant presentations:
+
+* Jesse van Bakel, Robin Flier, __Ezra Smink__, Jan Bakker, Jaap Kamps
+_University of Amsterdam at the CLEF 2026 JOKER Track_, 4307-4319
+([Paper](https://clef-staging.pages.dev/paper315.pdf)).
+
+* __Liana Ermakova__, Yaël Naud, Lilian Binet, Baptiste Dumas
+_Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour Generation. UBO at CLEF 2026_,  4237-4245
+([Paper](https://clef-staging.pages.dev/paper309.pdf)).
 
 ### JOKER Track Session 2/2 (Room ???)
 
-* **14:00	–	15:30** CLEF 2026 Participant presentations:
+* **14:00	–	15:30** CLEF 2026 JOKER Participant presentations:
+
+* __Ana-Maria Luisa Mocanu__, Sebastian Mocanu, Ciprian-Octavian Truică, Elena-Simona Apostol
+_IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4246-4262
+([Paper](https://clef-staging.pages.dev/paper310.pdf)).
+
+* __Russell Taylor__, Adam Brikman, Prateek Awate
+_Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Multi-Evaluator Ranking for Cross-Lingual Pun Translation at CLEF 2026 JOKER Task 2_, 4295-4306
+([Paper](https://clef-staging.pages.dev/paper314.pdf)).
+
+* __Edward Ajayi__, Prasenjit Mitra
+_Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT Lab at CLEF 2026 JOKER Track_, 4180-4195
+([Paper](https://clef-staging.pages.dev/paper306.pdf)).
 
 * To be announced.
+
+* (Time for additional talks, depending on demand, from the JOKER track.) 
+
+* **12:15 - 12:30** Additional participants' talks, Round table and break-out JOKER 2026 discussion
+    * We want to hear from *you*!
+    * What was great about 2026, and what could we improve for you?
+      * Focus on humor generation?
+      * Continue humor retrieval?
+      * Interest in (onomastic) wordplay translation?   
+    * Any ideas or volunteers are welcome!
+    * JOKER roadmap (Slides).
 
 ### Closing Ceremony and Introduction of CLEF 2027 
 

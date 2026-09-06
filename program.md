@@ -78,6 +78,10 @@ _Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour
 _IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4246-4262
 ([Paper](https://clef-staging.pages.dev/paper310.pdf)).
 
+* 📶 Arjun Mukherjee, <ins>Krishna Tewari</ins>, Jasvindar Singh, Sukomal Pal
+_From Words to Wit: Humor-Aware Information Retrieval in English and Hinglish_,  4263-4272
+([Paper](https://clef-staging.pages.dev/paper311.pdf)).
+
 * <ins>Russell Taylor</ins>, Adam Brikman, Prateek Awate
 _Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Multi-Evaluator Ranking for Cross-Lingual Pun Translation at CLEF 2026 JOKER Task 2_, 4295-4306
 ([Paper](https://clef-staging.pages.dev/paper314.pdf)).

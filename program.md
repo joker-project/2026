@@ -40,7 +40,7 @@ JOKER Track sessions take place in **Unknown Room**, except for the plenary CLEF
 
 ## Thursday 24th September 
 
-### JOKER Track Session 1/2 (Room ???)
+### JOKER Track Session 1/2 (Room 131)
 
 * **11:00-12:00** CLEF 2026 JOKER Task Overviews:
 
@@ -70,9 +70,9 @@ _University of Amsterdam at the CLEF 2026 JOKER Track_, 4307-4319
 _Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour Generation. UBO at CLEF 2026_,  4237-4245
 ([Paper](https://clef-staging.pages.dev/paper309.pdf)).
 
-### JOKER Track Session 2/2 (Room ???)
+### JOKER Track Session 2/2 (Room 131)
 
-* **14:00	–	15:30** CLEF 2026 JOKER Participant presentations:
+* **14:00	–	15:00** CLEF 2026 JOKER Participant presentations:
 
 * <ins>Ana-Maria Luisa Mocanu</ins>, Sebastian Mocanu, Ciprian-Octavian Truică, Elena-Simona Apostol
 _IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4246-4262
@@ -90,13 +90,13 @@ _Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Mu
 _Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT Lab at CLEF 2026 JOKER Track_, 4180-4195
 ([Paper](https://clef-staging.pages.dev/paper306.pdf)).
 
-* To be announced.
 
 * (Time for additional talks, depending on demand, from the JOKER track.) 
 
-* **15:15 - 15:30** CLEF 2027 JOKER Planning Session:
+* **15:00 - 15:30** CLEF 2027 JOKER Planning Session:
+  
     * We want to hear from *you*!
-    * What was great about 2026, and what could we improve for you?
+    * What was great about JOKER 2026, and what could we improve for you?
       * Focus on humor generation?
       * Continue humor retrieval?
       * Interest in (onomastic) wordplay translation?   

@@ -18,7 +18,7 @@
   
 ------------------------------------------------------------
 
-JOKER Track sessions take place in **Unknown Room**, except for the plenary CLEF conference sessions in **Lecture Room 3**.
+JOKER Track sessions take place in **Room 131**, except for the plenary CLEF conference sessions in **Lecture Room 3**.
 
 ## Monday 21st September 
 

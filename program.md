@@ -20,6 +20,10 @@
 
 JOKER Track sessions take place in **Room 131**, except for the plenary CLEF conference sessions in **Lecture Room 3**.
 
+Remote participation links:
+* Lecture Room 3: [Zoom Link](https://uni-jena-de.zoom-x.de/j/66385435727?pwd=it9CT09DNydV8Yw6OgHfj9UAAIiRbd.1)
+* Lecture Room 131: [Zoom Link](https://uni-jena-de.zoom-x.de/j/69928669598?pwd=VVQjbMW8lT5oN79yt4XozYImwiXuGj.1)
+
 ## Monday 21st September 
 
 * No track sessions.

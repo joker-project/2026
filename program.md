@@ -42,7 +42,7 @@ Remote participation links:
 
 ### Best of Labs, 2025 (Lecture Room 3)
 
-* **10:20 - 10:30** <ins>Russell Taylor</ins>, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides). 
+* **10:20 - 10:30** <ins>Russell Taylor</ins>, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides, [DOI](https://doi.org/10.1007/978-3-032-39150-6_20)). 
 
 ### JOKER Track Session 1/2 (Room 131)
 

@@ -48,7 +48,7 @@ Remote participation links:
 
 * **11:00-12:00** CLEF 2026 JOKER Task Overviews:
 
-* <ins>Poojan Vachharajani</ins>, Arjun Mukherjee, Jasvindar Singh, Krishna Tewari, Sukomal Pal, Jaap Kamps, Liana Ermakova 
+* Poojan Vachharajani, Arjun Mukherjee, Jasvindar Singh, <ins>Krishna Tewari</ins>, Sukomal Pal, Jaap Kamps, Liana Ermakova 
 _Overview of the CLEF 2026 JOKER Task 1: Humor-Aware Information Retrieval in English and Hinglish_, 4116-4129
 ([Paper](https://clef-staging.pages.dev/paper302.pdf)).
 

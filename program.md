@@ -36,7 +36,7 @@ Remote participation links:
 
 ### Lab Overviews 3 (Lecture Room 3)
 
-* **11:15 - 12:05** <ins>Liana Ermakova</ins>, Igor Kuzmin, Poojan Vachharajani, Tristan Miller, Anne-Gwenn Bosser and Jaap Kamps, _Overview of the CLEF 2026 JOKER Track: Humor Detection, Search, and Translation_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides, [DOI](https://doi.org/10.1007/978-3-032-39150-6_30)). 
+* **11:15 - 12:05** <ins>Liana Ermakova</ins>, Igor Kuzmin, Poojan Vachharajani, Tristan Miller, Anne-Gwenn Bosser and Jaap Kamps, _Overview of the CLEF 2026 JOKER Track: Humor Detection, Search, and Translation_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, [Slides](slides/CLEF26_JOKER_Track_Overview.pdf), [DOI](https://doi.org/10.1007/978-3-032-39150-6_30)). 
 
 ## Thursday 24th September 
 
@@ -50,19 +50,19 @@ Remote participation links:
 
 * Poojan Vachharajani, Arjun Mukherjee, Jasvindar Singh, <ins>Krishna Tewari</ins>, Sukomal Pal, Jaap Kamps, Liana Ermakova 
 _Overview of the CLEF 2026 JOKER Task 1: Humor-Aware Information Retrieval in English and Hinglish_, 4116-4129
-([Paper](https://clef-staging.pages.dev/paper302.pdf)).
+([Paper](https://clef-staging.pages.dev/paper302.pdf), [Slides](slides/CLEF26_JOKER_Task_Overviews.pdf)).
 
 * <ins>Liana Ermakova</ins>, Yael Naud, Lilian Binet, Baptiste Dumas, Jaap Kamps
 _Overview of the CLEF 2026 JOKER Task 2: Pun Translation from English to French_, 4130-4144
-([Paper](https://clef-staging.pages.dev/paper303.pdf)).
+([Paper](https://clef-staging.pages.dev/paper303.pdf), [Slides](slides/CLEF26_JOKER_Task_Overviews.pdf)).
 
 * <ins>Liana Ermakova</ins>, Yael Naud, Lilian Binet, Jaap Kamps
 _Overview of the CLEF 2026 JOKER Task 3: Onomastic Wordplay Translation from English to French_, 4145-4153
-([Paper](https://clef-staging.pages.dev/paper304.pdf)).
+([Paper](https://clef-staging.pages.dev/paper304.pdf), [Slides](slides/CLEF26_JOKER_Task_Overviews.pdf)).
 
 * <ins>Igor Kuzmin</ins>, Anne-Gwenn Bosser, Jaap Kamps, Liana Ermakova
 _Overview of the CLEF 2026 JOKER Task 4: Humor Generation in English, French, and Spanish_, 4154-4179
-([Paper](https://clef-staging.pages.dev/paper305.pdf)).
+([Paper](https://clef-staging.pages.dev/paper305.pdf), [Slides](slides/CLEF26_JOKER_Task_Overviews.pdf)).
 
 * **12:00	–	12:30** CLEF 2026 JOKER Participant presentations:
 
@@ -105,11 +105,11 @@ _Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT 
       * Continue humor retrieval?
       * Interest in (onomastic) wordplay translation?   
     * Any ideas or volunteers are welcome!
-    * JOKER roadmap (Slides).
+    * JOKER roadmap ([Slides](slides/CLEF27_JOKER_Track.pdf)).
 
 ### Closing Ceremony and Introduction of CLEF 2027 
 
-* **16:00	–	17:30** Closing and plans for 2027 (including slides on the CLEF 2027 JOKER track, Slides).
+* **16:00	–	17:30** Closing and plans for 2027 (including slides on the CLEF 2027 JOKER track, [Slides](slides/CLEF27_JOKER_Track.pdf)).
 
 ------------------------------------------------------------
 

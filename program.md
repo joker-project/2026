@@ -40,7 +40,7 @@ Remote participation links:
 
 ## Thursday 24th September 
 
-### Best of Labs, 2025 (Lecture Room 3)
+### Best of Labs, CLEF 2025 (Lecture Room 3)
 
 * **10:20 - 10:30** <ins>Russell Taylor</ins>, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, [Slides](slides/CLEF25_JOKER_BOTL_GT.pdf), [DOI](https://doi.org/10.1007/978-3-032-39150-6_20)). 
 

@@ -42,7 +42,7 @@ Remote participation links:
 
 ### Best of Labs, 2025 (Lecture Room 3)
 
-* **10:20 - 10:30** <ins>Russell Taylor</ins>, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, Slides, [DOI](https://doi.org/10.1007/978-3-032-39150-6_20)). 
+* **10:20 - 10:30** <ins>Russell Taylor</ins>, Benjamin Herbert and Michael Sana, _Pun Intended: Multi-Agent Translation of Wordplay with Contrastive Learning and Phonetic-Semantic Embeddings_ in: Proceedings of CLEF'26, LNCS, Springer, 2026 (Paper, [Slides](slides/CLEF25_JOKER_BOTL_GT.pdf), [DOI](https://doi.org/10.1007/978-3-032-39150-6_20)). 
 
 ### JOKER Track Session 1/2 (Room 131)
 
@@ -62,17 +62,17 @@ _Overview of the CLEF 2026 JOKER Task 3: Onomastic Wordplay Translation from Eng
 
 * <ins>Igor Kuzmin</ins>, Anne-Gwenn Bosser, Jaap Kamps, Liana Ermakova
 _Overview of the CLEF 2026 JOKER Task 4: Humor Generation in English, French, and Spanish_, 4154-4179
-([Paper](https://clef-staging.pages.dev/paper305.pdf), [Slides](slides/CLEF26_JOKER_Task_Overviews.pdf)).
+([Paper](https://clef-staging.pages.dev/paper305.pdf), [Slides](slides/CLEF26_JOKER_Task4.pdf)).
 
 * **12:00	–	12:30** CLEF 2026 JOKER Participant presentations:
 
 * Jesse van Bakel, Robin Flier, <ins>Ezra Smink</ins>, Jan Bakker, Jaap Kamps
 _University of Amsterdam at the CLEF 2026 JOKER Track_, 4307-4319
-([Paper](https://clef-staging.pages.dev/paper315.pdf)).
+([Paper](https://clef-staging.pages.dev/paper315.pdf), [Slides](slides/CLEF26_JOKER_UvA.pdf)).
 
 * <ins>Liana Ermakova</ins>, Yaël Naud, Lilian Binet, Baptiste Dumas
 _Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour Generation. UBO at CLEF 2026_,  4237-4245
-([Paper](https://clef-staging.pages.dev/paper309.pdf)).
+([Paper](https://clef-staging.pages.dev/paper309.pdf), [Slides](slides/CLEF26_JOKER_UBONLP.pdf)).
 
 ### JOKER Track Session 2/2 (Room 131)
 
@@ -80,19 +80,19 @@ _Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour
 
 * <ins>Ana-Maria Luisa Mocanu</ins>, Sebastian Mocanu, Ciprian-Octavian Truică, Elena-Simona Apostol
 _IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4246-4262
-([Paper](https://clef-staging.pages.dev/paper310.pdf)).
+([Paper](https://clef-staging.pages.dev/paper310.pdf), [Slides](slides/CLEF26_JOKER_IROH.pdf)).
 
 * Arjun Mukherjee, <ins>Krishna Tewari</ins>, Jasvindar Singh, Sukomal Pal
 _From Words to Wit: Humor-Aware Information Retrieval in English and Hinglish_,  4263-4272
-([Paper](https://clef-staging.pages.dev/paper311.pdf)).
+([Paper](https://clef-staging.pages.dev/paper311.pdf), [Slides](slides/CLEF26_JOKER_IREL.pdf)).
 
 * <ins>Russell Taylor</ins>, Adam Brikman, Prateek Awate
 _Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Multi-Evaluator Ranking for Cross-Lingual Pun Translation at CLEF 2026 JOKER Task 2_, 4295-4306
-([Paper](https://clef-staging.pages.dev/paper314.pdf)).
+([Paper](https://clef-staging.pages.dev/paper314.pdf), [Slides](slides/CLEF26_JOKER_GT.pdf)).
 
 * <ins>Edward Ajayi</ins>, Prasenjit Mitra
 _Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT Lab at CLEF 2026 JOKER Track_, 4180-4195
-([Paper](https://clef-staging.pages.dev/paper306.pdf)).
+([Paper](https://clef-staging.pages.dev/paper306.pdf), [Slides](slides/CLEF26_JOKER_CMUA.pdf)).
 
 
 * (Time for additional talks, depending on demand, from the JOKER track.) 

@@ -49,29 +49,29 @@ Remote participation links:
 * **11:00-12:00** CLEF 2026 JOKER Task Overviews:
 
 * Poojan Vachharajani, Arjun Mukherjee, Jasvindar Singh, <ins>Krishna Tewari</ins>, Sukomal Pal, Jaap Kamps, Liana Ermakova 
-_Overview of the CLEF 2026 JOKER Task 1: Humor-Aware Information Retrieval in English and Hinglish_, 4116-4129
+_Overview of the CLEF 2026 JOKER Task 1: Humor-Aware Information Retrieval in English and Hinglish_, 4115-4128
 ([Paper](https://ceur-ws.org/Vol-4283/paper302.pdf), [Slides](slides/CLEF26_JOKER_Task_Overviews.pdf)).
 
 * <ins>Liana Ermakova</ins>, Yael Naud, Lilian Binet, Baptiste Dumas, Jaap Kamps
-_Overview of the CLEF 2026 JOKER Task 2: Pun Translation from English to French_, 4130-4144
+_Overview of the CLEF 2026 JOKER Task 2: Pun Translation from English to French_, 4129-4143
 ([Paper](https://ceur-ws.org/Vol-4283/paper303.pdf), [Slides](slides/CLEF26_JOKER_Task_Overviews.pdf)).
 
 * <ins>Liana Ermakova</ins>, Yael Naud, Lilian Binet, Jaap Kamps
-_Overview of the CLEF 2026 JOKER Task 3: Onomastic Wordplay Translation from English to French_, 4145-4153
+_Overview of the CLEF 2026 JOKER Task 3: Onomastic Wordplay Translation from English to French_, 4144-4152
 ([Paper](https://ceur-ws.org/Vol-4283/paper304.pdf), [Slides](slides/CLEF26_JOKER_Task_Overviews.pdf)).
 
 * <ins>Igor Kuzmin</ins>, Anne-Gwenn Bosser, Jaap Kamps, Liana Ermakova
-_Overview of the CLEF 2026 JOKER Task 4: Humor Generation in English, French, and Spanish_, 4154-4179
+_Overview of the CLEF 2026 JOKER Task 4: Humor Generation in English, French, and Spanish_, 4153-4178
 ([Paper](https://ceur-ws.org/Vol-4283/paper305.pdf), [Slides](slides/CLEF26_JOKER_Task4.pdf)).
 
 * **12:00	–	12:30** CLEF 2026 JOKER Participant presentations:
 
 * Jesse van Bakel, Robin Flier, <ins>Ezra Smink</ins>, Jan Bakker, Jaap Kamps
-_University of Amsterdam at the CLEF 2026 JOKER Track_, 4307-4319
+_University of Amsterdam at the CLEF 2026 JOKER Track_, 4290-4302
 ([Paper](https://ceur-ws.org/Vol-4283/paper315.pdf), [Slides](slides/CLEF26_JOKER_UvA.pdf)).
 
 * <ins>Liana Ermakova</ins>, Yaël Naud, Lilian Binet, Baptiste Dumas
-_Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour Generation. UBO at CLEF 2026_,  4237-4245
+_Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour Generation. UBO at CLEF 2026_, 4220-4228
 ([Paper](https://ceur-ws.org/Vol-4283/paper309.pdf), [Slides](slides/CLEF26_JOKER_UBONLP.pdf)).
 
 ### JOKER Track Session 2/2 (Room 131)
@@ -79,19 +79,19 @@ _Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour
 * **14:00	–	15:00** CLEF 2026 JOKER Participant presentations:
 
 * <ins>Ana-Maria Luisa Mocanu</ins>, Sebastian Mocanu, Ciprian-Octavian Truică, Elena-Simona Apostol
-_IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4246-4262
+_IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4229-4245
 ([Paper](https://ceur-ws.org/Vol-4283/paper310.pdf), [Slides](slides/CLEF26_JOKER_IROH.pdf)).
 
 * Arjun Mukherjee, <ins>Krishna Tewari</ins>, Jasvindar Singh, Sukomal Pal
-_From Words to Wit: Humor-Aware Information Retrieval in English and Hinglish_,  4263-4272
+_From Words to Wit: Humor-Aware Information Retrieval in English and Hinglish_, 4246-4255
 ([Paper](https://ceur-ws.org/Vol-4283/paper311.pdf), [Slides](slides/CLEF26_JOKER_IREL.pdf)).
 
 * <ins>Russell Taylor</ins>, Adam Brikman, Prateek Awate
-_Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Multi-Evaluator Ranking for Cross-Lingual Pun Translation at CLEF 2026 JOKER Task 2_, 4295-4306
+_Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Multi-Evaluator Ranking for Cross-Lingual Pun Translation at CLEF 2026 JOKER Task 2_, 4278-4289
 ([Paper](https://ceur-ws.org/Vol-4283/paper314.pdf), [Slides](slides/CLEF26_JOKER_GT.pdf)).
 
 * <ins>Edward Ajayi</ins>, Prasenjit Mitra
-_Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT Lab at CLEF 2026 JOKER Track_, 4180-4195
+_Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT Lab at CLEF 2026 JOKER Track_, 4179-4194
 ([Paper](https://ceur-ws.org/Vol-4283/paper306.pdf), [Slides](slides/CLEF26_JOKER_CMUA.pdf)).
 
 
@@ -120,58 +120,58 @@ _Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT 
 JOKER: Humor Detection, Search, and Translation
 
 * Poojan Vachharajani, Arjun Mukherjee, Jasvindar Singh, Krishna Tewari, Sukomal Pal, Jaap Kamps, Liana Ermakova 
-_Overview of the CLEF 2026 JOKER Task 1: Humor-Aware Information Retrieval in English and Hinglish_, 4116-4129
+_Overview of the CLEF 2026 JOKER Task 1: Humor-Aware Information Retrieval in English and Hinglish_, 4115-4128
 ([Paper](https://ceur-ws.org/Vol-4283/paper302.pdf)).
 
 * Liana Ermakova, Yael Naud, Lilian Binet, Baptiste Dumas, Jaap Kamps
-_Overview of the CLEF 2026 JOKER Task 2: Pun Translation from English to French_, 4130-4144
+_Overview of the CLEF 2026 JOKER Task 2: Pun Translation from English to French_, 4129-4143
 ([Paper](https://ceur-ws.org/Vol-4283/paper303.pdf)).
 
 * Liana Ermakova, Yael Naud, Lilian Binet, Jaap Kamps
-_Overview of the CLEF 2026 JOKER Task 3: Onomastic Wordplay Translation from English to French_, 4145-4153
+_Overview of the CLEF 2026 JOKER Task 3: Onomastic Wordplay Translation from English to French_, 4144-4152
 ([Paper](https://ceur-ws.org/Vol-4283/paper304.pdf)).
 
 * Igor Kuzmin, Anne-Gwenn Bosser, Jaap Kamps, Liana Ermakova
-_Overview of the CLEF 2026 JOKER Task 4: Humor Generation in English, French, and Spanish_, 4154-4179
+_Overview of the CLEF 2026 JOKER Task 4: Humor Generation in English, French, and Spanish_, 4153-4178
 ([Paper](https://ceur-ws.org/Vol-4283/paper305.pdf)).
 
 * Edward Ajayi, Prasenjit Mitra
-_Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT Lab at CLEF 2026 JOKER Track_, 4180-4195
+_Cross-Lingual Cognitive Synergy for Constrained Humor Generation in LLMs: SaLT Lab at CLEF 2026 JOKER Track_, 4179-4194
 ([Paper](https://ceur-ws.org/Vol-4283/paper306.pdf)).
 
 * Georgios Arampatzis, Avi Arampatzis
-_DUTH at CLEF JOKER 2026: Conservative Hybridisation for Humor-Aware Retrieval, Pun Translation, Onomastic Wordplay Translation, and Multilingual Humour Generation_, 4196-4220
+_DUTH at CLEF JOKER 2026: Conservative Hybridisation for Humor-Aware Retrieval, Pun Translation, Onomastic Wordplay Translation, and Multilingual Humour Generation_, 4195-4219
 ([Paper](https://ceur-ws.org/Vol-4283/paper307.pdf)).
 
 * Fatimah Emad Eldin
-_Cairo University at the CLEF 2026 JOKER Track Heuristic Pun-Morphology Features and Tree Ensembles for Humor-Aware Information Retrieval_, 4221-4236
-([Paper](https://ceur-ws.org/Vol-4283/paper308.pdf)).
+_Cairo University at the CLEF 2026 JOKER Track Heuristic Pun-Morphology Features and Tree Ensembles for Humor-Aware Information Retrieval_, 
+(No Paper).
 
 * Liana Ermakova, Yaël Naud, Lilian Binet, Baptiste Dumas
-_Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour Generation. UBO at CLEF 2026_,  4237-4245
+_Testing LLMs on JOKER Task 3: Onomastic Wordplay Translation and Task 4: Humour Generation. UBO at CLEF 2026_,  4220-4228
 ([Paper](https://ceur-ws.org/Vol-4283/paper309.pdf)).
 
 * Ana-Maria Luisa Mocanu, Sebastian Mocanu, Ciprian-Octavian Truică, Elena-Simona Apostol
-_IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4246-4262
+_IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English_, 4229-4245
 ([Paper](https://ceur-ws.org/Vol-4283/paper310.pdf)).
 
 * Arjun Mukherjee, Krishna Tewari, Jasvindar Singh, Sukomal Pal
-_From Words to Wit: Humor-Aware Information Retrieval in English and Hinglish_,  4263-4272
+_From Words to Wit: Humor-Aware Information Retrieval in English and Hinglish_, 4246-4255
 ([Paper](https://ceur-ws.org/Vol-4283/paper311.pdf)).
 
 * Ruslan Pylypiv, Maksym Kuznietsov, Martina Szabóová
-_TUKE Satira at the CLEF 2026 JOKER Track: Constant-Variable Optimization for English-French Pun Translation_, 4273-4286
+_TUKE Satira at the CLEF 2026 JOKER Track: Constant-Variable Optimization for English-French Pun Translation_, 4256-4269
 ([Paper](https://ceur-ws.org/Vol-4283/paper312.pdf)).
 
 * Xinrui Qiu, Huihui Chen, Jinghe Zhai
-_CLEF 2026 JOKER Track: Relevance-Aware Multilingual Retrieval for Humorous Wordplay_, 4287-4294
+_CLEF 2026 JOKER Track: Relevance-Aware Multilingual Retrieval for Humorous Wordplay_, 4270-4277
 ([Paper](https://ceur-ws.org/Vol-4283/paper313.pdf)).
 
 * Russell Taylor, Adam Brikman, Prateek Awate
-_Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Multi-Evaluator Ranking for Cross-Lingual Pun Translation at CLEF 2026 JOKER Task 2_, 4295-4306
+_Searching for Sound-Meaning Collisions: Graph-Based Affordance Retrieval and Multi-Evaluator Ranking for Cross-Lingual Pun Translation at CLEF 2026 JOKER Task 2_, 4278-4289
 ([Paper](https://ceur-ws.org/Vol-4283/paper314.pdf)).
 
 * Jesse van Bakel, Robin Flier, Ezra Smink, Jan Bakker, Jaap Kamps
-_University of Amsterdam at the CLEF 2026 JOKER Track_, 4307-4319
+_University of Amsterdam at the CLEF 2026 JOKER Track_, 4290-4302
 ([Paper](https://ceur-ws.org/Vol-4283/paper315.pdf)).
 
